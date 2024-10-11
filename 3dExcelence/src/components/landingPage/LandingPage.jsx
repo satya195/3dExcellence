@@ -1,11 +1,14 @@
+import './LandingPageStyle.scss'
+// eslint-disable-next-line no-unused-vars
+import CloudvideoBg from "../../assets/videos/CloudvideoBg.mp4"
 const LandingPage = () => {
 
     return (
-        <div>
-            <h2>experiance section</h2>
-            <p>Hello people my name is satya m and i am conidered to be one og the greatest 
-                WEB DEVELOPERS 
-            </p>
+        <div className='landingPage-Box'>
+            <video src={CloudvideoBg} autoPlay loop muted className='cloudVideoBg'/>
+            <div className='landingcontainer'>
+            <h1 className='landingText'>Hello sweetheart</h1>
+            </div>
         </div>
     );
 };
